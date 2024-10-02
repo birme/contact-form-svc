@@ -1,8 +1,6 @@
 # Contact Form Service
 
-Provides a contact form backend with support for the following transports:
-
-- Slack
+Provides a contact form backend with support for sending message to Slack and more to be added.
 
 ## Install
 
@@ -34,17 +32,22 @@ docker run --rm -d \
 ```html
 <form action="http://localhost:8000/contact" method="POST">
   <label for="fname">First Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
   <label for="lname">Last Name</label>
-  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  <input
+    type="text"
+    id="lname"
+    name="lastname"
+    placeholder="Your last name.."
+  />
 
   <label for="email">Email</label>
-  <input type="email" id="email" name="email" placeholder="Your email..">
+  <input type="email" id="email" name="email" placeholder="Your email.." />
 
   <label for="message">Message</label>
-  <input type="text" id="message" name="message">
+  <input type="text" id="message" name="message" />
 
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" />
 </form>
 ```
